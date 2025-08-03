@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  gascon-translator:
+    build: .
+    container_name: gascon-translator
+    ports:
+      - "0.0.0.0:7860:7860"
+    restart: unless-stopped
+
